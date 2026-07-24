@@ -1,0 +1,83 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f1f5f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.portal-container {
+    background-color: #ffffff;
+    width: 400px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 1px solid #e2e8f0;
+    overflow: hidden;
+    
+    /* CSS ANIMATION: This fades the beautiful layout in right after popups close */
+    animation: fadeInPortal 1.5s ease-out;
+}
+
+.portal-header {
+    background-color: #1e3a8a;
+    padding: 20px;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.crest-icon {
+    font-size: 24px;
+}
+
+.portal-header h2 {
+    font-size: 14px;
+    margin: 0;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+.letter-body {
+    padding: 25px;
+    text-align: center;
+}
+
+.letter-body h3 {
+    color: #0f172a;
+    margin: 0 0 15px 0;
+    font-size: 16px;
+    letter-spacing: 0.5px;
+}
+
+.letter-body p {
+    color: #475569;
+    font-size: 14px;
+    line-height: 1.6;
+    margin: 0 0 25px 0;
+}
+
+.status-badge {
+    display: inline-block;
+    background-color: #dcfce7;
+    color: #15803d;
+    padding: 6px 16px;
+    border-radius: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* The animation instructions */
+@keyframes fadeInPortal {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
